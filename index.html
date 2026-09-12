@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Great+Vibes&family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DE+SAS+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>multiplication  Table</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body 
+    class="min-h-screen bg-[#F5F5F5] flex items-center">
+
+    <!-- 1st Screen -->
+    
+    <div 
+    id="firstScreen"
+    class="mx-auto p-30 bg-white flex flex-col justify-between text-center items-center gap-y-5">
+        
+        <!-- Heading -->
+        <h1 class="font-[Poppins] font-bold text-[48px] text-black">multiplication  Table</h1>
+        <p class="font-[Poppins] text-[20px] text-gray-700">Enter a number and see its multiplication table</p>
+        <!-- 1st Screen Input -->
+        <input 
+        id="firstNameInput"
+        class="bg-white border border-[#D9D9D9] rounded-[500px] font-[Poppins] font-bold text-[32px] text-[#D9D9D9] px-4 focus:outline-none focus:ring-1 focus:ring-[#7041D3]"
+        type="text" 
+        placeholder="Enter a number">
+
+        <!-- 1st Screen Button -->
+        <button 
+        id="firstBtn"
+        class="bg-[#7041D3] rounded-[500px] p-4 font-[Poppins] font-bold text-[32px] text-white">See multiplication  Table</button>
+        <!-- 1st Screen Error -->
+        <div 
+        id="firstError"
+        class="bg-[#CC3030] w-full p-1 rounded-[5px] text-white font-[Poppins] font-bold text-[48px]" hidden>number Is Missing</div>
+
+        <!-- 1st Screen result -->
+        <div 
+        id="multiplicationBox"
+        class="bg-white border border-gray-300 w-full p-10 rounded-[15px]" hidden>
+        <p id="multiplicationTitle" class="text-[#7041D3] text-2xl font-bold">Table of </p>
+        <div id="MultiplicationResult" class="text-2xl font-semibold text-black"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
