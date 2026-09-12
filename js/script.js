@@ -17,23 +17,17 @@ firstBtn.addEventListener("click",()=>{
 
     }else{
 
-    multiplicationBox.removeAttribute("hidden");
-    multiplicationTitle.innerText = "Table of " + firstNameInput.value;
-    for (let i = 1; i < 11; i++) {
-      MultiplicationResult.innerText +=`${firstNameInput.value} X ${i}= ${firstNameInput.value * i}\n`;
-    }
-    }
+    multiplicationBox.removeAttribute("hidden")
 
-    
-    
+    multiplicationTitle.innerText = "Table of " + firstNameInput.value
+
+    for(let i = 1; i<=10; i++ ){
+
+        MultiplicationResult.innerText +=`${firstNameInput.value} X ${i} = ${firstNameInput.value * i}\n`
+        
+        }
+
+    }
 });
 
 
-
-
-let namta = 5
-
-
-for(let i =1; i<=10; i++){
-    console.log(`${namta}x${i}=${namta*i}`);
-}
